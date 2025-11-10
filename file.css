@@ -14,6 +14,7 @@ header{
 }
 .icon-links{
 display:none;
+
 }
 #nav-bar{
     display: flex;
@@ -217,12 +218,10 @@ li:hover{
 }
 /*footer-section*/
 footer{
-    width: 100vw;
     text-align: center;
     background-color: rgb(59, 2, 80);
     color: white;
-    line-height: 2.5rem;
-    padding: 1rem 0;
+    padding: 20px;
     margin: 0;
 }
 
@@ -282,10 +281,6 @@ footer{
    margin: auto;
     margin-top: 2rem;
 }
-footer{
-    max-width: 100%;
-    padding: 0 10px;
-}
     /* mobilview prjct-sesc*/
     #prjcts{
         display:flex;
@@ -332,9 +327,6 @@ footer{
     padding: 2px;
     color: white;
     }
-    .menu-block{
-    display: block;
-    }  
       .mobile-menu i{
         position: relative;
        bottom: 30px;
@@ -346,15 +338,34 @@ footer{
         z-index: 10;
     }
     .menu-links{
-        width: 20%;
-        margin-left: auto;
-        margin-bottom: 1rem;
         color: white;
-        padding: 10px;
-        text-align: center;
         border-radius: 25px;
+        border: 1rem white;
+        box-shadow: 1px 1px 1px 1px white;
+          display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 30%;
+        left: auto;
+        right: 0;
+        margin: 0;
+        top: 16px;
+        text-align: right;
+        text-decoration: none;
+        align-content: center;
        
     }
+    .menu-links{
+        display: none;
+    }
+    .menu-links a{
+        text-align: center;
+    }
+        .menu-block{
+    display: block;
+    }  
         header a{
         display: flex;
         flex-direction: column;
@@ -392,23 +403,36 @@ footer{
         margin-right: 0;
     }
     .contact-sec{
-        width: 80%;
+        width: 100%;
         display: flex;
         text-align: center;
-        margin: auto;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 10px;
-        margin-left: 1rem;
     }
-     .menu-links a{
+     .menu-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         width: 40%;
+        left: auto;
+        right: 0;
+        margin: 0;
+        top: 16px;
         text-align: right;
         text-decoration: none;
-        z-index: 10;
         align-content: center;
+    }
+    .menu-links{
+        display: none;
+    }
+        .menu-block{
+    display: block;
+    }  
+        .menu-links a{
+        text-align: center;
     }
     p{
         font-size:20px ;
@@ -418,10 +442,12 @@ footer{
     footer {
         color: white;
         background-color: white;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         align-content: center;
         background-color: rgb(59, 2, 80);
+        line-height: 1.2rem;
     }
 }
