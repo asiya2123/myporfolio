@@ -150,7 +150,7 @@ li:hover{
     margin: 0;
     padding: 30px;
     background-color: rgb(251, 250, 252);
-    width: 100%;
+   /* width: 100%;*/
 }
 #prjcts{
     display: flex;
@@ -339,31 +339,33 @@ footer{
     }
     .menu-links{
         color: white;
-        border-radius: 25px;
-        border: 1rem white;
-        box-shadow: 1px 1px 1px 1px white;
-          display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        width: 26%;
+         width: 100px;
         left: auto;
         right: 0;
         margin: 0;
         top: 16px;
-        text-align: right;
-        text-decoration: none;
-        align-content: center;
-       
+        border-radius: 25px;
+        border: 1rem white;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
     }
     .menu-links{
         display: none;
-    }
-    .menu-links a{
 
         text-align: center;
+
     }
+    .menu-links a{
+        width: 70%;
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+    }
+
         .menu-block{
     display: block;
     }  
@@ -379,7 +381,7 @@ footer{
         border: 100%;
     }
     .fa-sort-up{
-        margin-top: 1rem;
+        margin-top: .5rem;
     }
         .bg{
         background-color: rgb(101, 55, 145);
@@ -388,29 +390,27 @@ footer{
     }
    
 }
+
 @media only screen and (max-width: 320px){
-    body{
-        margin: 0;
-        padding: 0;
+        /*mblview-navbar*/
+   .logo {
+        width: 20px;
+        height: 25px;
+        margin-top:4px ;
     }
-     header{
-        height:30px;
-        width: 100%;
+    h1{
+        font-size: 18px;
     }
     .icon-links{
         text-align: right;
     }
+    .icon-links i{
+        font-size: 1rem;
+    }
     header a{
         margin-right: 0;
     }
-    .contact-sec{
-        width: 100%;
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+
      .menu-links{
         display: flex;
         flex-direction: column;
@@ -426,8 +426,9 @@ footer{
         text-decoration: none;
         align-content: center;
     }
-    .menu-links{
+    .menu-links {
         display: none;
+        width: 60px;
     }
         .menu-block{
     display: block;
@@ -435,20 +436,5 @@ footer{
         .menu-links a{
         text-align: center;
     }
-    p{
-        font-size:20px ;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    footer {
-        color: white;
-        background-color: white;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        background-color: rgb(59, 2, 80);
-        line-height: 1.2rem;
-    }
+
 }
